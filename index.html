@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple game tab</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="flex user">
+        <img
+          class="avatar"
+          src=" https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Son_Tung_M-TP_1_%282017%29.png/220px-Son_Tung_M-TP_1_%282017%29.png"
+          alt="avartar"
+          width="50"
+          height="50"
+        />
+        <p class="username">Huu Truong</p>
+      </div>
+    </header>
+    <div class="main">
+      <div class="banner">
+        <img
+          src="https://images.hdqwalls.com/wallpapers/bthumb/pubg-helmet-guy-2020-6o.jpg"
+          class="image-banner"
+        />
+      </div>
+      <div class="flex content">
+        <div class="col-5">
+          <div class="card">
+            <h3 class="card-title">PLAYERUNKNOWN'S BATTLEGROUNDS</h3>
+            <div class="card-content">
+              <p>
+                First released at the start of 2017, PlayerUnknown's
+                Battlegrounds, better known as PUBG, is one of the most popular
+                Battle Royale games that had a peak of over 606 thousand
+                concurrent players in the last month, that is February 2020. The
+                game enjoys a massive following worldwide and is highly
+                data-intensive. However, the game has a surprisingly low system
+                requirement if you run the game on the lowest settings on PCs.
+                Today, we take you through a list of the minimum system
+                requirements for both PC and mobile platforms
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="card">
+            <h3 class="card-title">PUBG system requirements for PC</h3>
+            <div class="card-content">
+              <p>
+                CPU: Intel Core i5-4430 / AMD FX-6300 <br />
+                CPU SPEED: Info <br />
+                RAM: 8 GB <br />
+                OS: 64-bit Window   s 7, Windows 8.1, Windows 10 <br />
+                VIDEO CARD: nVidia GeForce GTX 960 2GB / AMD Radeon R7 370 2GB
+                <br />
+                PIXEL SHADER: 5.1 <br />
+                VERTEX SHADER: 5.1 <br />
+                FREE DISK SPACE: 30 GB <br />
+                DEDICATED VIDEO RAM: 2 GB
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center;">
+        <div id="trailer-video">
+          <iframe
+            src="https://www.youtube.com/embed/Xv1y9udLzto"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <button id="trailer-btn" onclick="showTrailer(event)">Trailer</button>
+      </div>
+    </div>
+    <footer class="flex">
+      <div class="col-3">
+        <div>
+          <p><strong>Email:</strong>truondeptrai@gmail.com</p>
+          <p><strong>Phone:</strong>029292922929</p>
+        </div>
+      </div>
+      <div class="col-3">
+          <p><strong>Address:</strong>Ho Chi Minh City</p>
+      </div>
+      <div class="col-3">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.067433277927!2d106.77973971511804!3d10.882475760202244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d88556fa38e7%3A0x9746dea7851b826a!2zS8OtIHTDumMgeMOhIGtodSBiIMSR4bqhaSBo4buNYyBxdeG7kWMgZ2lhIEhDTQ!5e0!3m2!1svi!2s!4v1595307710449!5m2!1svi!2s"
+            frameborder="0"
+            width="100%"
+            aria-hidden="false"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const trailerVideo = document.getElementById("trailer-video");
+      const video = document.getElementsByClassName("video-stream html5-main-video")
+
+      function showTrailer(event) {
+        trailerVideo.style.display = "block";
+      }
+
+      window.onclick = function (event) {
+        if (event.target == trailerVideo) {
+          trailerVideo.style.display = "none";
+          console.log(video)
+        }
+      };
+    </script>
+  </body>
+</html>
