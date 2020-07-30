@@ -11,6 +11,22 @@
 .user-username {
   margin: auto 10px;
   color: #a2e75e;
+  position: relative;
+}
+
+.user-username:hover {
+  animation-name: jump;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes jump {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -20px;
+  }
 }
 
 @media only screen and (max-width: 575px) {

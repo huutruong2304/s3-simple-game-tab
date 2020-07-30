@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="./public/css/main.css" />
   <link rel="stylesheet" href="./public/css/user-info.css" />
   <link rel="stylesheet" href="./public/css/card.css" />
+  <link rel="stylesheet" href="./public/css/banner.css" />
   <link rel="stylesheet" href="./public/css/button.css" />
+  <link rel="stylesheet" href="./public/css/map.css" />
 </head>
 
 <body>
@@ -73,12 +75,13 @@
       </div>
     </div>
     <div style="text-align: center;">
-      <div id="trailer-video">
-        <iframe src="https://www.youtube.com/embed/Xv1y9udLzto" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div id="trailer-video-background">
+        <div id="trailer-video-player"></div>
+        <!-- <iframe id="youtube-video-player" width="560" height="315" src="https://www.youtube.com/embed/pjR51wO7vII"
+          frameborder="0" allowfullscreen></iframe> -->
       </div>
 
-      <button id="trailer-btn" class="button" onclick="showTrailer(event)">Trailer</button>
+      <button id="trailer-btn" class="button">Trailer</button>
     </div>
   </div>
   <footer class="flex">
@@ -104,20 +107,25 @@
   </footer>
 
   <script>
-    const trailerVideo = document.getElementById("trailer-video");
-    const video = document.getElementsByClassName("video-stream html5-main-video")
+    // const trailerBg = document.getElementById("trailer-video-background");
+    // function showTrailer() {
+    //   trailerBg.style.display = "block";
+    // }
+    // let trailerVideo = document.getElementById("trailer-video");
 
-    function showTrailer(event) {
-      trailerVideo.style.display = "block";
-    }
+    // function showTrailer(event) {
+    //   trailerVideo.style.display = "block";
+    // }
 
-    window.onclick = function (event) {
-      if (event.target == trailerVideo) {
-        trailerVideo.style.display = "none";
-        console.log(video)
-      }
-    };
+    // window.onclick = function (event) {
+    //   if (event.target == trailerVideo) {
+    //     trailerVideo.style.display = "none";
+    //     stopvideo();
+    //   }
+    // };
   </script>
+  <script src="./public/js/control-youtube-video.js"></script>
+
 </body>
 
 </html>
