@@ -1,0 +1,20 @@
+.user-info {
+  justify-content: flex-end;
+}
+.user-avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  margin: auto 10px;
+}
+
+.user-username {
+  margin: auto 10px;
+  color: #a2e75e;
+}
+
+@media only screen and (max-width: 575px) {
+  .user-info {
+    justify-content: flex-start;
+  }
+}

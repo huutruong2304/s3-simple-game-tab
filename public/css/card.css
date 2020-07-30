@@ -1,0 +1,16 @@
+.card {
+  padding: 5px;
+  min-height: 300px;
+  line-height: 1.4;
+}
+
+.card-title {
+  text-transform: uppercase;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.card-body {
+  padding: 0 5px;
+  text-align: left;
+}

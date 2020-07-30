@@ -1,119 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple game tab</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="flex user">
-        <img
-          class="avatar"
-          src=" https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Son_Tung_M-TP_1_%282017%29.png/220px-Son_Tung_M-TP_1_%282017%29.png"
-          alt="avartar"
-          width="50"
-          height="50"
-        />
-        <p class="username">Huu Truong</p>
-      </div>
-    </header>
-    <div class="main">
-      <div class="banner">
-        <img
-          src="https://images.hdqwalls.com/wallpapers/bthumb/pubg-helmet-guy-2020-6o.jpg"
-          class="image-banner"
-        />
-      </div>
-      <div class="flex content">
-        <div class="col-5">
-          <div class="card">
-            <h3 class="card-title">PLAYERUNKNOWN'S BATTLEGROUNDS</h3>
-            <div class="card-content">
-              <p>
-                First released at the start of 2017, PlayerUnknown's
-                Battlegrounds, better known as PUBG, is one of the most popular
-                Battle Royale games that had a peak of over 606 thousand
-                concurrent players in the last month, that is February 2020. The
-                game enjoys a massive following worldwide and is highly
-                data-intensive. However, the game has a surprisingly low system
-                requirement if you run the game on the lowest settings on PCs.
-                Today, we take you through a list of the minimum system
-                requirements for both PC and mobile platforms
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-5">
-          <div class="card">
-            <h3 class="card-title">PUBG system requirements for PC</h3>
-            <div class="card-content">
-              <p>
-                CPU: Intel Core i5-4430 / AMD FX-6300 <br />
-                CPU SPEED: Info <br />
-                RAM: 8 GB <br />
-                OS: 64-bit Window   s 7, Windows 8.1, Windows 10 <br />
-                VIDEO CARD: nVidia GeForce GTX 960 2GB / AMD Radeon R7 370 2GB
-                <br />
-                PIXEL SHADER: 5.1 <br />
-                VERTEX SHADER: 5.1 <br />
-                FREE DISK SPACE: 30 GB <br />
-                DEDICATED VIDEO RAM: 2 GB
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div style="text-align: center;">
-        <div id="trailer-video">
-          <iframe
-            src="https://www.youtube.com/embed/Xv1y9udLzto"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
 
-        <button id="trailer-btn" onclick="showTrailer(event)">Trailer</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple game tab</title>
+  <link rel="stylesheet" href="./public/css/main.css" />
+  <link rel="stylesheet" href="./public/css/user-info.css" />
+  <link rel="stylesheet" href="./public/css/card.css" />
+  <link rel="stylesheet" href="./public/css/button.css" />
+</head>
+
+<body>
+  <header>
+    <div class="flex user-info">
+      <img class="user-avatar" src="./public/assets/avatar_user.jpg" alt="user avatar can't be displayed" width="50"
+        height="50" />
+      <p class="user-username">Huu Truong</p>
+    </div>
+  </header>
+  <div class="main-container">
+    <div class="banner">
+      <img src="./public/assets/game_background.jpg" class="image-banner" />
+    </div>
+    <div class="flex main-article">
+      <div class="col-5">
+        <div class="card">
+          <h3 class="card-title">GIỚI THIỆU GAME FIFA 18 </h3>
+          <div class="card-body">
+            <p>
+              Nếu đã từng bỏ ra hàng chục, thậm chí hàng trăm giờ đồng hồ với FIFA 17, những thay đổi mà phiên bản năm
+              nay mang tới không khó để nhận ra. Nói một cách công bằng nhất, chúng đều đóng góp không nhỏ để mang đến
+              sự khác biệt cho FIFA 18. <br>
+              Đầu tiên là hệ thống chuyền bóng đã được “tút” lại, các pha đan bóng trong tầm gần đã thoải mái hơn giúp
+              lối chơi ban bật và phối hợp ngắn trở thành món vũ khí khá lợi hại, dĩ nhiên cũng mất một khoảng thời gian
+              để người chơi thuần thục. Những pha bóng dài nay cũng tăng phần chính xác và chân thực, các đường phất
+              bóng mở ra thế công phụ thuộc nhiều vào khả năng thao tác cũng như cảm giác lực, điều này được thể hiện rõ
+              nhất với các cây chuyền hảo hạng như Toni Kroos hay Kevin De Bruyne.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="card">
+          <h3 class="card-title">CẤU HÌNH</h3>
+          <div class="card-body">
+            <h4>MINIMUM</h4>
+            <ul>
+              <li>Requires a 64-bit processor and operating system</li>
+              <li>OS: Windows 7 SP1, Windows 8.1, Windows 10 (64-bit version)</li>
+              <li>Processor:&nbsp; Intel Core i3-2100 @ 3.1GHz or AMD Phenom II X4 965 @ 3.4 GHz</li>
+              <li>Memory:&nbsp; 8 GB RAM</li>
+              <li>Graphics:&nbsp; NVIDIA GTX 460 or AMD Radeon R7 260</li>
+              <li>Storage: 50 GB available space</li>
+              <li>Sound Card: DirectX Compatible</li>
+              <li>DirectX: Version 11</li>
+            </ul>
+            <h4>RECOMMENDED</h4>
+            <ul>
+              <li>Requires a 64-bit processor and operating system</li>
+              <li>OS: Windows 7 SP1, Windows 8.1, Windows 10 (64-bit version)&nbsp;</li>
+              <li>Processor: Intel i5-3550K @ 3.40GHz or AMD FX 8150 @ 3.6GHz</li>
+              <li>Memory:&nbsp; 8 GB RAM</li>
+              <li>Graphics: NVIDIA GTX 660 or AMD Radeon R9 270</li>
+              <li>Storage: 50 GB available space</li>
+              <li>Sound Card: DirectX Compatible</li>
+              <li>DirectX: Version 11</li>
+            </ul>
+
+          </div>
+        </div>
       </div>
     </div>
-    <footer class="flex">
-      <div class="col-3">
-        <div>
-          <p><strong>Email:</strong>truondeptrai@gmail.com</p>
-          <p><strong>Phone:</strong>029292922929</p>
-        </div>
+    <div style="text-align: center;">
+      <div id="trailer-video">
+        <iframe src="https://www.youtube.com/embed/Xv1y9udLzto" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div class="col-3">
-          <p><strong>Address:</strong>Ho Chi Minh City</p>
-      </div>
-      <div class="col-3">
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.067433277927!2d106.77973971511804!3d10.882475760202244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d88556fa38e7%3A0x9746dea7851b826a!2zS8OtIHTDumMgeMOhIGtodSBiIMSR4bqhaSBo4buNYyBxdeG7kWMgZ2lhIEhDTQ!5e0!3m2!1svi!2s!4v1595307710449!5m2!1svi!2s"
-            frameborder="0"
-            width="100%"
-            aria-hidden="false"
-          ></iframe>
-        </div>
-      </div>
-    </footer>
 
-    <script>
-      const trailerVideo = document.getElementById("trailer-video");
-      const video = document.getElementsByClassName("video-stream html5-main-video")
+      <button id="trailer-btn" class="button" onclick="showTrailer(event)">Trailer</button>
+    </div>
+  </div>
+  <footer class="flex">
+    <div class="col-3">
+      <div>
+        <p><strong>Email:</strong>aasda@gmail.com</p>
+        <p><strong>Phone:</strong>029292922929</p>
+      </div>
+    </div>
+    <div class="col-3">
+      <div>
+        <p><strong>Address:</strong>Ho Chi Minh City</p>
+        <p><strong>Công ty: </strong>Công ty S3corp</p>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.067433277927!2d106.77973971511804!3d10.882475760202244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d88556fa38e7%3A0x9746dea7851b826a!2zS8OtIHTDumMgeMOhIGtodSBiIMSR4bqhaSBo4buNYyBxdeG7kWMgZ2lhIEhDTQ!5e0!3m2!1svi!2s!4v1595307710449!5m2!1svi!2s"
+          frameborder="0" width="100%" aria-hidden="false"></iframe>
+      </div>
+    </div>
+  </footer>
 
-      function showTrailer(event) {
-        trailerVideo.style.display = "block";
+  <script>
+    const trailerVideo = document.getElementById("trailer-video");
+    const video = document.getElementsByClassName("video-stream html5-main-video")
+
+    function showTrailer(event) {
+      trailerVideo.style.display = "block";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == trailerVideo) {
+        trailerVideo.style.display = "none";
+        console.log(video)
       }
+    };
+  </script>
+</body>
 
-      window.onclick = function (event) {
-        if (event.target == trailerVideo) {
-          trailerVideo.style.display = "none";
-          console.log(video)
-        }
-      };
-    </script>
-  </body>
 </html>
